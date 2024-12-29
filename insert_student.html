@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS-IN-STUDENT</title>
+    <link rel="stylesheet" href="insert_student.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>  
+
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LearnLink</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LearnLink</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="insert_student.html">Insert Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="show_students.html">Show Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="update_student.html">Update Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="delete_students.html">Delete Students</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="DashBoard.html">DashBoard</a>
+              </li>
+                
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav> 
+    <br><br><br>
+    <div class="container ">
+        <h1>Insert Students</h1>
+        <br><br><br>
+    <div class="container-me">
+         <div class="container-me-outer">
+            <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="ID" placeholder="ID" >
+                    <label for="ID">Enter Id</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="Input_email" placeholder="example@example.com" >
+                    <label for="Input_email">Email address</label>
+                  </div>
+                </div>
+              </div>
+              <br>
+            <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="Input-F-Name" placeholder="name" >
+                    <label for="Input-F-Name">Enter Frist name</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="Input-L-Name" placeholder="Name" >
+                    <label for="Input-L-Name">Enter Last name</label>
+                  </div>
+                </div>
+              </div>
+            <br>
+            <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="Input-City" placeholder="City" >
+                    <label for="Input-City">City</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="ProgramSelect" aria-label="Floating label select example">
+                        <option selected>Open this select menu</option>
+                        <option value="Foundation" >Foundation</option>
+                        <option value="HND" >HND</option>
+                        <option value="Degree">Degree</option>
+                        <option value="MSC">MSC</option>
+                      </select>
+                      <label for="floatingSelect"> selects Course</label>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="Input-Gurading" placeholder="Guarding name" >
+                    <label for="Input-Gurading">Guarding name </label>
+                  </div>
+                </div>
+               </div>
+               <br>
+               
+               <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                        <input class="form-check-input" type="checkbox" name="type" value="ETF" id="flexCheckDefault" required>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          ETF
+                        </label>
+                  </div>
+                  <div class="col">
+                    <input class="form-check-input" type="checkbox"   name="type" value="ORDBMS" id="flexCheckDefault" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ORDBMS
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input class="form-check-input" type="checkbox"  name="type" value="OOP" id="flexCheckDefault" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      OOP
+                    </label>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                          <input class="form-check-input" type="checkbox"  name="type" value="SE" id="flexCheckDefault" required>
+                          <label class="form-check-label" for="flexCheckDefault">
+                            SE
+                          </label>
+                    </div>
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox"  name="type" value="HCL" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                       HCL
+                      </label>
+                    </div>
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox"  name="type" value="IP" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        IP
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br>
+                <div class="button-gro">
+                    <button type="button" class="btn btn-primary" onclick="GetStudentDetails()">Submit</button><br>
+                    <a href="insert_student.html"><button type="button" class="btn btn-primary" >Reseat</button></a>
+                </div>
+                
+
+
+               </div>
+                
+               </div>
+            </div>
+            </div>
+            
+            </div>
+            
+         </div>
+         
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+</body>
+</html>

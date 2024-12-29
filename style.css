@@ -1,0 +1,187 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(211, 170, 235);
+    height: 5px;
+    border-radius: 20px;
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: antiquewhite !important;
+}
+.home-slide{
+    margin-top: 30px !important;
+    background-color: rgba(0, 0, 0, 0.316) !important;
+}
+.container-I{
+    width: 100%;
+    height: 100%;
+    /*border: 1PX solid red;*/
+    margin-top: 80PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-c{
+    cursor: pointer;
+}
+.container-I-outer{
+    width: 40%;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: antiquewhite;*/
+   
+    transition: 0.5s;
+    
+}
+.container-I-inner{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+   
+}
+.container-I-outer:hover{
+    border: 1px solid rgb(232, 149, 41);   
+    transition: 0.5s;
+}
+
+.text-center-me{
+    color: black !important;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    font-size: 55px !important;
+}
+.img-me{
+    width: 60%;
+    height: 60%;
+    /*border: 1px solid red;*/
+    transition: 0.5s;
+   
+}
+.img-me:hover{
+    height: 80%;
+    /*border: 1px solid red;*/
+    transition: 0.5s;
+}
+.container-I-cover{
+    width: 90%;
+    height: 500px;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-I-cover-outer{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: end;
+    
+}
+.container-I-cover-outer-inner-hiden{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: end;
+    background-color: rgb(28, 122, 205);
+}
+.container-I-cover-outer-inner{
+    width: 100%;
+    height: 80%;
+    /*border: 1px solid red;*/
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: black;
+}
+.container-I-cover-outer-inner:hover{
+   height: 90%;
+   transition: 0.5s;
+   cursor: pointer;
+   overflow: hidden;
+}
+.img-1{
+    background-image: url(Image/Home/two-students-working-on-computer.jpg);
+    background-size: cover;
+}
+.img-2{
+    background-image: url(Image/Home/istockphoto-1048192018-612x612.jpg);
+    background-size: cover;
+}
+.img-3{
+    background-image: url(Image/Home/female-medical-student-19727389.webp);
+    background-size: cover;
+}
+.img-4{
+    background-image: url(Image/Home/AdobeStock_66958118-scaled-1.jpeg);
+    background-size: cover;
+}
+.img-5{
+    background-image: url(Image/Home/images.jpg);
+    background-size: cover;
+}
+h2{
+   margin-bottom: -50px !important; 
+   font-size: 40px !important;
+}
+.container-I-hide{
+    width: 18%;
+    height: 53%;
+    position: absolute;
+    /*border: 1px solid red;*/
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.519);
+    visibility: hidden;
+    overflow: hidden;
+    
+    
+}
+.container-I-hide:hover{
+   height: 60%;
+   transition: 0.5s;
+   cursor: pointer;
+   overflow: hidden;
+}
+.container-text{
+    display: flex !important;
+    align-items: center !important;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #151315;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#scrollToTopBtn:hover {
+    background-color: #ffffff;
+    color: rgb(1, 1, 1);
+    border: 1px solid black;
+}
+
+

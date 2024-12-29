@@ -1,0 +1,10 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: antiquewhite !important;
+
+}
+tbody{
+    color: black !important;
+    font-size: 20px;
+}

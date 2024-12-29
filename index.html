@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>  
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LearnLink</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LearnLink</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="insert_student.html">Insert Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="show_students.html">Show Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="update_student.html">Update Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="delete_students.html">Delete Students</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="DashBoard.html">DashBoard</a>
+              </li>
+                
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>  
+      <div id="carouselExampleRide" class="carousel slide home-slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="IN-ST">
+            <img src="Image/Home/Screenshot 2023-11-30 223931.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Image/Home/Home01.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Image/Home/Screenshot 2023-11-30 231431.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container-I">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="text-center container-I-inner">
+                <div class="container-I-outer">
+                <img src="Image/Home/379413_student_icon (2).png" class="rounded img-c" alt="coloum" id="Img-on-1">
+                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center container-I-inner">
+                <div class="container-I-outer ">
+                <img src="Image/Home/9004754_load_loading_refresh_sync_icon.png" class="rounded img-c" alt="coloum" id="Img-on-2">
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="text-center container-I-inner">
+                <div class="container-I-outer "> 
+                <img src="Image/Home/7480652_serach_find_zoom_seo_icon.png" class="rounded img-c" alt="coloum" id="Img-on-3">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-I  ">
+        <div class="position-relative">
+          <img src="Image/Home/Screenshot 2023-12-01 162135.png" alt="Your Image" class="img-fluid d-block w-100">
+        
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h1 class="text-light text-center-me">About AS</h1>
+            <p class="text-light text-center-me">LearnLink was created through the merger of four of the world’s leading education technology companies: Blackboard, Campus Management, Campus Labs, and iModules.
+
+              And we’re much more than a technology provider. We’re a true partner, whose team includes former faculty, administrators, and leaders with experience spanning more than three decades. We’re dedicated to understanding your institution’s unique challenges and ensuring your success.
+              
+              Our goal is to not only meet your needs today, but to drive innovation that changes what EdTech can make possible for you tomorrow.</p>
+              <p class="text-light text-center-me"><b>Our mission is to provide dynamic, data-informed experiences to the global education community so that learners and educators can achieve their goals.</b></p>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container container-I ">
+        <h2>Our Programs</h2>
+      </div>
+      <div class="container-I">
+        <div class="container-I-cover">
+          <div class="container-I-cover-outer">
+            <div class="container-I-cover-outer-inner img-1" id="Hide-div-img">
+              <div class="container-I-hide" id="Hide-div" >
+                <h5>School of computing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-I-cover-outer">
+            <div class="container-I-cover-outer-inner img-2  " id="Hide-div-img-1">
+              <div class="container-I-hide" id="Hide-div-1" >
+                <h5>school of engineering</h5>
+              </div>
+            </div>
+           
+          </div>
+          <div class="container-I-cover-outer">
+            <div class="container-I-cover-outer-inner img-3" id="Hide-div-img-2">
+              <div class="container-I-hide" id="Hide-div-2" >
+                <h5>school of medicine</h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-I-cover-outer">
+            <div class="container-I-cover-outer-inner img-4" id="Hide-div-img-3">
+              <div class="container-I-hide" id="Hide-div-3" >
+                <h5>school of law</h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-I-cover-outer">
+            <div class="container-I-cover-outer-inner img-5" id="Hide-div-img-4">
+              <div class="container-I-hide" id="Hide-div-4" >
+                <h5>school of business</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-I">
+        <h4>2023@WPSintrnational</h4>
+      </div>
+      <button class="contact-page" id="scrollToTopBtn" title="Go to top">Top</button>
+      
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      
+</body>
+</html>
