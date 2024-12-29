@@ -402,6 +402,23 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
               cell6.textContent = student.StudentGurading;
               cell7.textContent = student.SubjectArry;
               cell8.textContent = student.ProgramSelect;
+
+              const deleteButton = document.createElement('button');
+               deleteButton.type = 'button';
+               deleteButton.className = 'btn btn-danger delete-button';
+               deleteButton.textContent = 'Delete';
+               deleteButton.setAttribute('data-student-id', data.StudentId);
+               cell9.appendChild(deleteButton); // Append 
+
+               deleteButton.addEventListener('click', function () {
+                const studentIdToDelete = this.getAttribute('data-student-id');
+                console.log(studentIdToDelete);
+               // Call a function to handle the deletion based on the student ID
+                deleteStudent(studentIdToDelete);
+                 });
+   
+
+
             });
           } else if (typeof data === 'object') {
             const row = tableBody.insertRow();
@@ -425,6 +442,8 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
             cell6.textContent = data.StudentGurading;
             cell7.textContent = data.SubjectArry;
             cell8.textContent = data.ProgramSelect;
+            
+
 
            // Create a "Delete" button for the fetched student
                const deleteButton = document.createElement('button');
@@ -432,6 +451,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
                deleteButton.className = 'btn btn-danger delete-button';
                deleteButton.textContent = 'Delete';
                deleteButton.setAttribute('data-student-id', data.StudentId);
+               cell9.appendChild(deleteButton); // Append the delete button to the cell
 
           // Add an event listener to the "Delete" button
              deleteButton.addEventListener('click', function () {
@@ -439,7 +459,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
              console.log(studentIdToDelete);
             // Call a function to handle the deletion based on the student ID
              deleteStudent(studentIdToDelete);
-});
+              });
 
 // Append the "Delete" button to the table cell
 cell9.appendChild(deleteButton);
