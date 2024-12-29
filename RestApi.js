@@ -85,11 +85,12 @@ app.get("/students/:searchCriteria/:searchInput", async (req, res) => {
 
   try {
     const query = { [validSearchCriteria]: new RegExp(`^${searchInput}$`, "i") };
-    const student = await Student.findOne(query);
-    if (student) {
-      res.json(student);
+    const students = await Student.find(query); // Use `find` instead of `findOne`
+
+    if (students.length > 0) {
+      res.json(students); // Return all matching students
     } else {
-      res.status(404).json({ error: "Student not found" });
+      res.status(404).json({ error: "No students found" });
     }
   } catch (error) {
     console.error(error);

@@ -288,7 +288,10 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
           console.log('Server data:', data.error);
           alert('Server data:', data.error);
           const tableBody = document.getElementById('studentsTableBody');
-          tableBody.innerHTML = ''; // Clear existing rows
+          tableBody.innerHTML = ''; 
+          if(data.error){
+          tableBody.innerHTML = 'Data not found'; 
+          }// Clear existing rows
   
           if (Array.isArray(data)) {
             data.forEach(student => {
@@ -335,6 +338,14 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
           } else {
             console.error('Unexpected data format:', data);
             alert('Unexpected data format from the server.');
+            tableBody.innerHTML = ''; // Clear existing rows
+          if (data.error) {
+            const row = tableBody.insertRow();
+            const cell = row.insertCell(0);
+            cell.colSpan = 8;
+            cell.textContent = 'Student not found';
+            cell.style.textAlign = 'center';
+          }
           }
         })
         .catch(error => {
