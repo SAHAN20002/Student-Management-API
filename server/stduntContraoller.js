@@ -94,9 +94,10 @@ const updateStudent = async (req, res) => {
 };
 
 const deleteStudent = async (req, res) => {
-  const { id } = req.params;
+  
   try {
-    const student = await Student.findOneAndDelete({ StudentId: id });
+    const { id } = req.params;
+    const student = await Student.findOneAndDelete(id);
 
     if (student) {
       res.json({ message: "Student deleted successfully", student });
