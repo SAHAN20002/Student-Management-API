@@ -460,9 +460,8 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
             // Call a function to handle the deletion based on the student ID
              deleteStudent(studentIdToDelete);
               });
-
-// Append the "Delete" button to the table cell
-cell9.appendChild(deleteButton);
+           // Append the "Delete" button to the table cell
+           cell9.appendChild(deleteButton);
           } else {
             console.error('Unexpected data format:', data);
             alert('Unexpected data format from the server.');
