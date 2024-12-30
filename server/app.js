@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3000; // Fallback to 3000 if PORT is not define
 const MONGO_URI = process.env.Mongo_URL;
 
 const app = express();
+app.use(cors());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
