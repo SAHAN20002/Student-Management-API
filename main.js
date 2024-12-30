@@ -110,7 +110,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
                  };
                 
 
-                 fetch('http://localhost:3000/students',{
+                 fetch('http://localhost:3000/students/creat',{
                   method:'POST',
                   headers:{
                     'Content-Type': 'application/json',
@@ -152,7 +152,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
    // Function to fetch and display students
    function fetchAndDisplayStudents() {
     // Fetch data from the server
-    fetch('http://localhost:3000/students')
+    fetch('http://localhost:3000/students/show')
       .then(response => response.json())
       .then(students => {
         const tableBody = document.getElementById('studentsTableBody');
@@ -197,7 +197,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
 
       if(searchCriteria !== "" && searchInput !== ""){
     // Make a request to your server to fetch the student details
-             fetch(`http://localhost:3000/students/${searchCriteria}/${searchInput}`)
+             fetch(`http://localhost:3000/students/search${searchCriteria}/${searchInput}`)
              .then(response => response.json())
              .then(student => {
 
@@ -281,7 +281,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
   
     if (searchCriteria !== "" && searchInput !== "") {
       // Make a request to your server to fetch the student details
-      fetch(`http://localhost:3000/students/${searchCriteria}/${searchInput}`)
+      fetch(`http://localhost:3000/students/search${searchCriteria}/${searchInput}`)
         .then(response => response.json())
         .then(data => {
           // Log the data to understand its structure
@@ -370,7 +370,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
   
     if (searchCriteria !== "" && searchInput !== "") {
       // Make a request to your server to fetch the student details
-      fetch(`http://localhost:3000/students/${searchCriteria}/${searchInput}`)
+      fetch(`http://localhost:3000/students/search${searchCriteria}/${searchInput}`)
         .then(response => response.json())
         .then(data => {
           // Log the data to understand its structure
@@ -510,7 +510,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
   // Function to populate a specific table based on course type
 function populateTable(courseType, tableBodyId) {
   // Make a request to your server to fetch student details based on courseType
-  fetch(`http://localhost:3000/students/${courseType}`)
+  fetch(`http://localhost:3000/students/courseType${courseType}`)
       .then(response => response.json())
       .then(data => {
           const tableBody = document.getElementById(tableBodyId);

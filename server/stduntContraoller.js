@@ -110,10 +110,12 @@ const deleteStudent = async (req, res) => {
 };
 
 module.exports = {
-  creatStudent,
-  showAllStudents,
-  searchStudent,
-  getStudentsByCourseType,
-  updateStudent,
-  deleteStudent,
+    creatStudent,
+    showAllStudents,
+    searchStudent,
+    getStudentsByCourseType,
+    updateStudent,
+    deleteStudent,
 };
+
+
