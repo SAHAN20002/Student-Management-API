@@ -19,10 +19,6 @@ mongoose.connect(MONGO_URI).then(() =>{
   console.log(err);
 })
 
-
-
-
-// Define the Student schema and model
 const studentSchema = new mongoose.Schema({
   StudentId: { type: String, required: true, unique: true },
   StudentFName: { type: String, required: true },
@@ -33,6 +29,9 @@ const studentSchema = new mongoose.Schema({
   ProgramSelect: { type: String, required: true },
   SubjectArry: { type: Array, required: true }
 });
+
+
+// Define the Student schema and model
 
 const Student = mongoose.model("Student", studentSchema);
 
@@ -136,7 +135,7 @@ app.put("/students/update", async (req, res) => {
 });
 
 // Delete a student
-app.delete("/students/delete/:id", async (req, res) => {
+app.delete("/delete/:id", async (req, res) => {
   const { id } = req.params;
 
   try {
