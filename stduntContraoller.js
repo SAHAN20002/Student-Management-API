@@ -59,7 +59,7 @@ const searchStudent = async (req, res) => {
   }
 };
 
-const searchCourseType = async (req, res) => {
+const getStudentsByCourseType = async (req, res) => {
   const { courseType } = req.params;
   try {
     const students = await Student.find({
@@ -113,7 +113,7 @@ module.exports = {
   creatStudent,
   showAllStudents,
   searchStudent,
-  searchCourseType,
+  getStudentsByCourseType,
   updateStudent,
   deleteStudent,
 };
