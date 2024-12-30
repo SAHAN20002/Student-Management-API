@@ -197,7 +197,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
 
       if(searchCriteria !== "" && searchInput !== ""){
     // Make a request to your server to fetch the student details
-             fetch(`http://localhost:3000/students/search${searchCriteria}/${searchInput}`)
+             fetch(`http://localhost:3000/students/search/${searchCriteria}/${searchInput}`)
              .then(response => response.json())
              .then(student => {
 
@@ -281,7 +281,7 @@ $('#scrollToTopBtn').click(function () { /* Scroll-smooth*/
   
     if (searchCriteria !== "" && searchInput !== "") {
       // Make a request to your server to fetch the student details
-      fetch(`http://localhost:3000/students/search${searchCriteria}/${searchInput}`)
+      fetch(`http://localhost:3000/students/search/${searchCriteria}/${searchInput}`)
         .then(response => response.json())
         .then(data => {
           // Log the data to understand its structure
